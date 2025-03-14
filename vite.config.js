@@ -25,5 +25,13 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-router', 'vuex'],
+        },
+      },
+    },
   },
 })
