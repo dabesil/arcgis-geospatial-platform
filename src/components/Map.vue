@@ -1,10 +1,10 @@
 <script>
-import FeatureLayer from '@arcgis/core/layers/FeatureLayer'
-import Map from '@arcgis/core/Map'
-import MapView from '@arcgis/core/views/MapView'
-import Expand from '@arcgis/core/widgets/Expand'
-import LayerList from '@arcgis/core/widgets/LayerList'
-import Legend from '@arcgis/core/widgets/Legend'
+import FeatureLayer from '../../node_modules/@arcgis/core/layers/FeatureLayer'
+import Map from '../../node_modules/@arcgis/core/Map'
+import MapView from '../../node_modules/@arcgis/core/views/MapView'
+import Expand from '../../node_modules/@arcgis/core/widgets/Expand'
+import LayerList from '../../node_modules/@arcgis/core/widgets/LayerList'
+import Legend from '../../node_modules/@arcgis/core/widgets/Legend'
 import { shallowReactive } from 'vue'
 
 export default {
@@ -99,7 +99,7 @@ export default {
           if (result.features.length > 0) {
             const feature = result.features[0]
 
-            this.$store.getters.mapView.goTo(feature.geometry.extent)
+            //this.$store.getters.mapView.goTo(feature.geometry.extent)
             this.$store.getters.mapView.openPopup({
               features: [feature],
               location: feature.geometry.centroid,
