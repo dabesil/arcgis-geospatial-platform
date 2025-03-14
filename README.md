@@ -75,3 +75,7 @@ A estrutura foi dividida em componentes que irão realizar funções específica
   > Componente principal da aplicação, responsável por instanciar o mapa e controlar seus widgets e camadas, irá receber as informações de filtragem e executar a consulta repassando o resultado para o drawer através do vuex.
 
 Para gerenciamento de estado foi utilizada a tecnologia Vuex, para armazenamento da referência do mapa para as atualizações reativas no mesmo, controle da exibição do drawer e reatividade dos dados que serão exibidos no drawer.
+
+### Issues
+
+Atualmente o comportamento da filtragem está degradado por conta desta [issue](https://github.com/dabesil/arcgis-geospatial-platform/issues/3), foi adicionada a dependências `dynamicImport` e as configurações de `build` e `server` no arquivo de configurações para corrigir a leitura dos módulos, porém não surtiram nenhum efeito. Cenário só acontece em produção.
