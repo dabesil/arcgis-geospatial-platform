@@ -3,9 +3,9 @@ import PanelVue from './components/Panel.vue'
 </script>
 
 <template>
-  <body>
+  <div>
     <PanelVue />
-  </body>
+  </div>
 </template>
 
 <style scoped></style>
