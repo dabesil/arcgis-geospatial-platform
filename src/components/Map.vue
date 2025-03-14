@@ -129,7 +129,7 @@ export default {
               bairro: graphic.attributes.bairro,
             })
           } else {
-            this.$store.commit('closeDrawer')
+            this.$store.commit('setDrawer', false)
           }
         })
       })

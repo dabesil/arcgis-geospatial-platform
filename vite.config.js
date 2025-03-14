@@ -8,18 +8,7 @@ import dynamicImport from 'vite-plugin-dynamic-import'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/arcgis-geospatial-platform/',
-  plugins: [
-    vue({
-      template: {
-        compilerOptions: {
-          isCustomElement: (tag) =>
-            ['arcgis-map', 'arcgis-legend', 'arcgis-zoom', 'arcgis-layer-list'].includes(tag),
-        },
-      },
-    }),
-    vueDevTools(),
-    dynamicImport(),
-  ],
+  plugins: [vue(), vueDevTools(), dynamicImport()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

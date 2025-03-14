@@ -2,8 +2,13 @@
 export default {
   name: 'DrawerVue',
   computed: {
-    drawer() {
-      return this.$store.state.drawer
+    drawer: {
+      get() {
+        return this.$store.state.drawer
+      },
+      set(value) {
+        this.$store.commit('setDrawer', value)
+      },
     },
   },
 }

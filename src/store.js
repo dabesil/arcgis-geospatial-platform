@@ -13,8 +13,8 @@ export default createStore({
     changeDrawerVisibility(state) {
       state.drawer = !state.drawer
     },
-    closeDrawer(state) {
-      state.drawer = false
+    setDrawer(state, value) {
+      state.drawer = value
     },
     changeData(state, attributes) {
       state.data.id = attributes.id
