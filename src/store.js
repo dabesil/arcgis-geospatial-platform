@@ -11,7 +11,7 @@ export default createStore({
       state.mapView = mapView
     },
     changeDrawerVisibility(state) {
-      state.drawer = !this.state.drawer
+      state.drawer = !state.drawer
     },
     changeData(state, attributes) {
       state.data.id = attributes.id

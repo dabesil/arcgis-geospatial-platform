@@ -1,12 +1,17 @@
 <script>
 export default {
   name: 'DrawerVue',
+  computed: {
+    drawer() {
+      return this.$store.state.drawer
+    },
+  },
 }
 </script>
 <template>
   <v-layout>
     <v-navigation-drawer
-      v-model="this.$store.state.drawer"
+      v-model="drawer"
       location="right"
       elevation="7"
       width="300"
