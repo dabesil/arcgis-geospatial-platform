@@ -28,14 +28,16 @@ VITE_ARCGIS_API_LAYER_PLANEJAMENTO_URL=""
 VITE_ARCGIS_API_LAYER_PONTOS_URL=""
 ```
 
-4. Instale as dependências e execite a aplicação em modo de desenvolvimento
+4. Criar uma conta no [ArcGis](https://www.esri.com/en-us/arcgis/products/create-account) para poder realizar o login e visualizar o mapa, por questões de segurança foi optado por não usar apiKey para acessar os mapas
+
+5. Instale as dependências e execite a aplicação em modo de desenvolvimento
 
 ```
 npm install
 npm run dev
 ```
 
-5. Para construir a aplicação para produção:
+6. Para construir a aplicação para produção:
 
 ```
 npm run build
