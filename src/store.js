@@ -13,6 +13,9 @@ export default createStore({
     changeDrawerVisibility(state) {
       state.drawer = !state.drawer
     },
+    closeDrawer(state) {
+      state.drawer = false
+    },
     changeData(state, attributes) {
       state.data.id = attributes.id
       state.data.bairro = attributes.bairro
