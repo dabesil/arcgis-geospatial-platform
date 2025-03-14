@@ -6,7 +6,7 @@ Este repositório contém a implementação de uma plataforma geoespacial utiliz
 
 ### Execução
 
-1.Clonar o repositório
+1. Clonar o repositório
 
 ```
 git clone https://github.com/dabesil/arcgis-geospatial-platform.git
